@@ -1,3 +1,4 @@
 # Lutfi Mahardika
 Build with HTML, CSS, JS from scratch.
-(View website)[lutfimahardika.github.io/porto]
+
+[View website](https://lutfimahardika.github.io/porto/)
