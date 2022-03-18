@@ -1,54 +1,80 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚡️ Home | Electrical Engineer | Lutfi Mahardika</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <main>
-        <div class="big-wrapper">
-            <header>
-                <div class="container">
-                    <div class="logo">
-                        <h3>Lutfi Mahardika</h3>
-                    </div>
-                    <div class="links">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Uses</a></li>
-                        </ul>
-                    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>💡 Home | Electrical Engineer in Surabaya, Indonesia | Lutfi Mahardika</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+        <script src="https://kit.fontawesome.com/cf43333361.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <h2 class="logo">Lutfi Mahardika</h2>
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="uses.html">Uses</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" />
+            </div>
+            <div class="row-1">
+                <div class="col-1">
+                    <h1>Hey, I'm Lutfi 💡</h1>
+                    <h3>Electrical Engineer and Full Time Linux User based in Surabaya, Indonesia</h3>
+                    <!-- <p>(Compatible/Generic)</p> -->
+                    <!-- <h4>$32.50</h4> -->
+                    <!-- <button type="button">Buy Now<img src="images/arrow.png" /></button> -->
                 </div>
-            </header>
-            <div class="showcase-area">
-                <div class="container">
-                    <div class="left">
-                        <div class="big-title">
-                            <h1>Hey, I'm Lutfi ⚡️</h1>
-                            <h4>Electrical Engineer and Full time Linux user based in <br>Surabaya, Indonesia</h1>
-                        </div>
-                        <p class="text">
-                            
-                        </p>
-                    </div>
-                    <div class="right"></div>
+                <div class="col-2">
+                    <!-- <img src="images/controller.png" class="controller" />
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="images/add.png" />
+                        <p><small>Add to cart</small></p>
+                    </div> -->
                 </div>
             </div>
-            <div class="bottom-area">
-                <div class="container">
-                    <ul class="socials">
-                        <li><a href=""><i class="fa fa-github"></i></a></li>
-                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                    <p>Inspired by Aaron Dunphy</p>
-                </div>
+            <div class="row-2">
+                <h2>Projects</h2>
+                <a href="">
+                    <h3>Solar Tracker using Fuzzy Logic Controller</h3>
+                    <h6>07 February 2022</h6>
+                </a>
             </div>
         </div>
-    </main>
-</body>
+        <div class="footer">
+            <ul class="socials">
+                <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+            <p>Inspired by <a href="https://www.aarondunphy.com/">Aaron Dunphy </a></p>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "250px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
 </html>
