@@ -4,51 +4,111 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>💡 Home | Electrical Engineer in Surabaya, Indonesia | Lutfi Mahardika</title>
+        <title>💡 Lutfi Mahardika | Electrical Engineer in Surabaya, Indonesia</title>
         <link rel="stylesheet" href="style.css" />
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
         <script src="https://kit.fontawesome.com/cf43333361.js" crossorigin="anonymous"></script>
     </head>
+    <script src="main.js"></script>
     <body>
+        <nav>
+            <div class="logo">
+                <h2 class="">Lutfi Mahardika</h2>
+            </div>
+            <ul>
+                <li><a href="#" onclick="open_home()">Home</a></li>
+                <li><a href="#" onclick="open_about()">About</a></li>
+                <li><a href="#" onclick="open_projects()">Projects</a></li>
+                <!-- <li><a href="#" onclick="open_uses()">Uses</a></li> -->
+            </ul>
+        </nav>
         <div class="container">
-            <div class="navbar">
-                <h2 class="logo">Lutfi Mahardika</h2>
-                <nav>
-                    <ul id="menuList">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="uses.html">Uses</a></li>
+            <!-- HOME SECTION -->
+            <section id="home">
+                <div class="hero">
+                    <h1 class="title">Hey, I'm Lutfi ⚡</h1>
+                    <h2 class="subtitle">
+                        Electrical Engineer and Full Time Linux User based in <br />
+                        Surabaya, Indonesia
+                    </h2>
+                </div>
+                <div class="preview">
+                    <h1 class="title">Projects</h1>
+                    <a href="">
+                        <h2>Solar Tracker using Fuzzy Logic Control</h2>
+                        <p>07 February 2022</p>
+                    </a>
+                </div>
+            </section>
+            <!-- END SECTION -->
+
+            <!-- ABOUT SECTION -->
+            <section id="about">
+                <div class="top">
+                    <h1 class="title">Hey, I'm Lutfi ⚡</h1>
+                    <div class="content">
+                        <div class="text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis debitis non, sunt ducimus tempora quos! Explicabo nihil sunt eum eveniet quisquam repellat fugiat dolor facilis magni quo, quod
+                                repellendus!
+                            </p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus eum iste autem est temporibus, tempore nostrum nisi ullam doloremque alias voluptatum ducimus omnis, voluptas obcaecati neque eius in
+                                quasi.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet ad tempora doloribus veniam illo nobis aspernatur nostrum quas perferendis? Obcaecati itaque ullam pariatur at neque aut dolorem repellat?
+                                Ipsam, magni?
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="images/photo.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h1 class="title">Tech Skills</h1>
+                    <ul class="skills">
+                        <li>Google Docs</li>
+                        <li>Google Sheets</li>
+                        <li>Google Slides</li>
+                        <li>Inkscape</li>
+                        <li>CorelDRAW</li>
+                        <li>GIMP</li>
+                        <li>Photoshop</li>
+                        <li>Arduino</li>
+                        <li>AVR</li>
+                        <li>Eagle</li>
+                        <li>EasyEDA</li>
+                        <li>KiCad</li>
+                        <li>FreeCAD</li>
+                        <li>Google Sketchup</li>
+                        <li>PLC Omron</li>
+                        <li>Linux</li>
                     </ul>
-                </nav>
-                <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" />
-            </div>
-            <div class="row-1">
-                <div class="col-1">
-                    <h1>Hey, I'm Lutfi 💡</h1>
-                    <h3>Electrical Engineer and Full Time Linux User based in Surabaya, Indonesia</h3>
-                    <!-- <p>(Compatible/Generic)</p> -->
-                    <!-- <h4>$32.50</h4> -->
-                    <!-- <button type="button">Buy Now<img src="images/arrow.png" /></button> -->
                 </div>
-                <div class="col-2">
-                    <!-- <img src="images/controller.png" class="controller" />
-                    <div class="color-box"></div>
-                    <div class="add-btn">
-                        <img src="images/add.png" />
-                        <p><small>Add to cart</small></p>
-                    </div> -->
-                </div>
-            </div>
-            <div class="row-2">
-                <h2>Projects</h2>
-                <a href="">
-                    <h3>Solar Tracker using Fuzzy Logic Controller</h3>
-                    <h6>07 February 2022</h6>
-                </a>
-            </div>
+            </section>
+            <!-- END SECTION -->
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects">
+                <h1>
+                    Work in <br />
+                    progress...
+                </h1>
+            </section>
+
+            <!-- USES SECTION -->
+            <section id="uses">
+                <h1>
+                    Work in <br />
+                    progress...
+                </h1>
+            </section>
+            <!-- END SECTION -->
+
+            <!-- END SECTION -->
         </div>
-        <div class="footer">
+        <footer>
             <ul class="socials">
                 <li>
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -63,18 +123,7 @@
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                 </li>
             </ul>
-            <p>Inspired by <a href="https://www.aarondunphy.com/">Aaron Dunphy </a></p>
-        </div>
-        <script>
-            var menuList = document.getElementById("menuList");
-            menuList.style.maxHeight = "0px";
-            function togglemenu() {
-                if (menuList.style.maxHeight == "0px") {
-                    menuList.style.maxHeight = "250px";
-                } else {
-                    menuList.style.maxHeight = "0px";
-                }
-            }
-        </script>
+            <p class="copyright">inspired by <a href="https://www.aarondunphy.com">Aaron Dunphy</a></p>
+        </footer>
     </body>
 </html>
